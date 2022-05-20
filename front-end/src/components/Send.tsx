@@ -14,7 +14,7 @@ import {
 import { string } from 'yup'
 
 const PUBLIC_CHAIN_NAME = process.env.NEXT_PUBLIC_CHAIN_NAME
-const PUBLIC_STAKING_DENOM = process.env.NEXT_PUBLIC_STAKING_DENOM || 'uconst'
+const PUBLIC_STAKING_DENOM = process.env.NEXT_PUBLIC_STAKING_DENOM || 'utorii'
 // const PUBLIC_STAKING_DENOM = process.env.NEXT_PUBLIC_STAKING_DENOM || 'utorii'
 const PUBLIC_RECIPIENT_ADDRESS =
   process.env.NEXT_PUBLIC_RECIPIENT_ADDRESS ||
@@ -216,8 +216,8 @@ const Send: NextPage = () => {
     const setamount: string = (
       entrypoint.register.combination.length * 1000
     ).toString()
-    const gasPrice = GasPrice.fromString('0.002uconst')
-    const txFee = calculateFee(400000, gasPrice)
+    const gasPrice = GasPrice.fromString('0.002utorii')
+    const txFee = calculateFee(1000000, gasPrice)
 
     const amount: Coin[] = [
       {
