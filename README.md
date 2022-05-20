@@ -27,6 +27,10 @@ This is a simple web3 lotto application built with [Next.js](https://nextjs.org/
 ## -
 
 ## ⌨️ Development
+```
+git checkout dev
+```
+
 
 To start development, we should install our packages first.
 
